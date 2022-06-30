@@ -19,6 +19,7 @@
 		84A4DB1228480CD900BE1612 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4DB1128480CD900BE1612 /* ContentView.swift */; };
 		84A4DB1428480CDE00BE1612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4DB1328480CDE00BE1612 /* Assets.xcassets */; };
 		84A4DB1728480CDE00BE1612 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4DB1628480CDE00BE1612 /* Preview Assets.xcassets */; };
+		84B2EE0E286E40EA000A7ED3 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2EE0D286E40EA000A7ED3 /* CoverImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		84A4DB1128480CD900BE1612 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84A4DB1328480CDE00BE1612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A4DB1628480CDE00BE1612 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84B2EE0D286E40EA000A7ED3 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		84A4DB0E28480CD900BE1612 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				84B2EE0C286E40B9000A7ED3 /* View */,
 				8438E9342848A9E3004E9BBD /* Info.plist */,
 				8438E92B2848A606004E9BBD /* Data */,
 				8438E9202848A590004E9BBD /* Video */,
@@ -135,6 +138,14 @@
 				84A4DB1628480CDE00BE1612 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84B2EE0C286E40B9000A7ED3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B2EE0D286E40EA000A7ED3 /* CoverImageView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			files = (
 				84A4DB1228480CD900BE1612 /* ContentView.swift in Sources */,
 				8438E93D2848B0F4004E9BBD /* MainView.swift in Sources */,
+				84B2EE0E286E40EA000A7ED3 /* CoverImageView.swift in Sources */,
 				8438E9392848B0B1004E9BBD /* MapView.swift in Sources */,
 				84A4DB1028480CD900BE1612 /* AfricaApp.swift in Sources */,
 				8438E9372848B075004E9BBD /* VideoListView.swift in Sources */,
