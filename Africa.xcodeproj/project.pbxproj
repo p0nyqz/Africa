@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		841E3A77286FA10500CA8D7D /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E3A76286FA10500CA8D7D /* AnimalListItemView.swift */; };
+		841E3A79286FA56600CA8D7D /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E3A78286FA56600CA8D7D /* AnimalModel.swift */; };
 		8438E9302848A636004E9BBD /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 8438E92C2848A636004E9BBD /* covers.json */; };
 		8438E9312848A636004E9BBD /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 8438E92D2848A636004E9BBD /* videos.json */; };
 		8438E9322848A636004E9BBD /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 8438E92E2848A636004E9BBD /* locations.json */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		841E3A76286FA10500CA8D7D /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
+		841E3A78286FA56600CA8D7D /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		8438E9212848A5C7004E9BBD /* rhino.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rhino.mp4; sourceTree = "<group>"; };
 		8438E9222848A5C8004E9BBD /* ostrich.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ostrich.mp4; sourceTree = "<group>"; };
 		8438E9232848A5C8004E9BBD /* giraffe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giraffe.mp4; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				84B2EE10286E46E2000A7ED3 /* CoverImageModel.swift */,
+				841E3A78286FA56600CA8D7D /* AnimalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				8438E93D2848B0F4004E9BBD /* MainView.swift in Sources */,
 				84B2EE0E286E40EA000A7ED3 /* CoverImageView.swift in Sources */,
 				84B2EE11286E46E2000A7ED3 /* CoverImageModel.swift in Sources */,
+				841E3A79286FA56600CA8D7D /* AnimalModel.swift in Sources */,
 				8438E9392848B0B1004E9BBD /* MapView.swift in Sources */,
 				84A4DB1028480CD900BE1612 /* AfricaApp.swift in Sources */,
 				8438E9372848B075004E9BBD /* VideoListView.swift in Sources */,
