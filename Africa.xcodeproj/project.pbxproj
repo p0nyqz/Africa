@@ -25,6 +25,7 @@
 		84B2EE11286E46E2000A7ED3 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2EE10286E46E2000A7ED3 /* CoverImageModel.swift */; };
 		84B2EE14286E496B000A7ED3 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2EE13286E496B000A7ED3 /* CodableBundleExtension.swift */; };
 		84D642EB2872345A0084CB52 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D642EA2872345A0084CB52 /* AnimalDetailView.swift */; };
+		84D642ED287243D20084CB52 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D642EC287243D20084CB52 /* HeadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		84B2EE10286E46E2000A7ED3 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		84B2EE13286E496B000A7ED3 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		84D642EA2872345A0084CB52 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
+		84D642EC287243D20084CB52 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				84B2EE0D286E40EA000A7ED3 /* CoverImageView.swift */,
 				841E3A76286FA10500CA8D7D /* AnimalListItemView.swift */,
 				84D642EA2872345A0084CB52 /* AnimalDetailView.swift */,
+				84D642EC287243D20084CB52 /* HeadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				8438E9372848B075004E9BBD /* VideoListView.swift in Sources */,
 				8438E93B2848B0CD004E9BBD /* GalleryView.swift in Sources */,
 				84B2EE14286E496B000A7ED3 /* CodableBundleExtension.swift in Sources */,
+				84D642ED287243D20084CB52 /* HeadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
