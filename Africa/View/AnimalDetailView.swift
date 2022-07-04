@@ -56,7 +56,16 @@ struct AnimalDetailView: View {
                     InsetFactView(animal: animal)
                 }
                 .padding(.horizontal)
+                
                 // DESCRIPTION
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
+                    
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                .padding(.horizontal)
                 
                 // MAP
                 
