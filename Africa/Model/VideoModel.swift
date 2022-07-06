@@ -14,6 +14,6 @@ struct Video: Codable, Identifiable {
     
     // Computed Property
     var thumbnail: String {
-        "video=\(id)"
+        "video-\(id)"
     }
 }
