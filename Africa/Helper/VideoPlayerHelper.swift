@@ -15,5 +15,5 @@ func playVideo(fileName: String, fileFormat: String) -> AVPlayer {
         videoPlayer = AVPlayer(url: Bundle.main.url(forResource: fileName, withExtension: fileFormat)!)
         videoPlayer?.play()
     }
-    return videoPlayer! 
+    return videoPlayer!
 }
