@@ -11,18 +11,18 @@ import MapKit
 struct MapView: View {
     // MARK: PROPERTIES
     
-
+    //    @State private var mapType: MKMapType = .satellite
+    //    init() {
+    //        MKMapView.appearance().mapType = .satellite
+    //    }
     
     @State private var region: MKCoordinateRegion = {
         var mapCoordinates = CLLocationCoordinate2D(latitude: 6.600286, longitude: 16.4377599)
         var mapZoomLevel = MKCoordinateSpan(latitudeDelta: 70.0, longitudeDelta: 70.0)
         var mapRegion = MKCoordinateRegion(center: mapCoordinates, span: mapZoomLevel)
-        
         return mapRegion
     }()
-    
-//    @NSCopying var preferredConfiguration: MKMapConfiguration { get set }
-
+        
     
     let locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
 
@@ -37,15 +37,22 @@ struct MapView: View {
         Map(coordinateRegion: $region, annotationItems: locations, annotationContent: {item in
         // (A) PIN: OLD STYLE (always static)
         // MapPin(coordinate: item.location, tint:.accentColor)
+        
         // (B) MARKERS: NEW STYLE(always static)
         // MapMarker(coordinate: item.location, tint:.accentColor)
+        
         // (С) CUSTOM BASIC ANNOTATION (it could be interactive)
-        MapAnnotation(coordinate: item.location) {
-            Image("logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 32, height: 32, alignment: .center)
-            } //: ANNOTATION
+        // MapAnnotation(coordinate: item.location) {
+        //     Image("logo")
+        //         .resizable()
+        //         .scaledToFit()
+        //         .frame(width: 32, height: 32, alignment: .center)
+        //     } //: ANNOTATION
+        
+        // (D) CUSTOM ADVANCED ANNOTATION (it could be interactive)
+            MapAnnotation(coordinate: item.location) {
+                MapAnnotationView(location: item)
+            }
         })
     }
 }
