@@ -13,11 +13,14 @@ struct GalleryView: View {
     let animals: [Animal] = Bundle.main.decode("animals.json")
     
     // SIMPLE GRID DEFINITION
-    let gridLayout:[GridItem] = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
+    // let gridLayout:[GridItem] = [
+    //     GridItem(.flexible()),
+    //     GridItem(.flexible()),
+    //     GridItem(.flexible())
+    // ]
+    
+    // EFFICIENT GRID DEFINITION
+    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
     
     // MARK: - BODY
     
