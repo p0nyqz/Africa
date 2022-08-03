@@ -55,8 +55,10 @@ struct ContentView: View {
                             ForEach(animals) {animal in
                                 NavigationLink(destination: AnimalDetailView(animal: animal)) {
                                     AnimalListItemView(animal: animal)
-                                } //: CONDITION
+                                } //: LINK
                             } //: LOOP
+                            
+                            CreditsView()
                         } //: LIST
                     } else {
                         ScrollView(.vertical, showsIndicators: false) {
@@ -70,7 +72,7 @@ struct ContentView: View {
                             .padding(10)
                             .animation(.easeIn)
                         } //: SCROLL
-                    } //: LIST
+                    } //: CONDITION
             } //: GROUP
         }
             
