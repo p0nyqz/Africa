@@ -39,7 +39,7 @@ struct GalleryView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            
+
             VStack (alignment: .center, spacing: 30) {
                 
                 // MARK: - IMAGE
@@ -51,7 +51,7 @@ struct GalleryView: View {
                 
                 // MARK: - SLIDER
                 
-                Slider(value: $gridColumn, in: 2...4)
+                Slider(value: $gridColumn, in: 2...4, step: 1)
                     .padding(.horizontal)
                     .onChange(of: gridColumn, perform: { value in
                         gridSwitch()
@@ -72,7 +72,7 @@ struct GalleryView: View {
                     } //: LOOP
                 } //: GRID
                 .animation(.easeIn)
-                onAppear(perform: {
+                .onAppear(perform: {
                     gridSwitch()
                 })
             } //: VSTACK
@@ -89,5 +89,6 @@ struct GalleryView: View {
 struct GalleryView_Previews: PreviewProvider {
     static var previews: some View {
         GalleryView()
+            .previewDevice("iPhone 13")
     }
 }
