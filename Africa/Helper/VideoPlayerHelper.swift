@@ -16,4 +16,8 @@ func playVideo(fileName: String, fileFormat: String) -> AVPlayer {
         videoPlayer?.play()
     }
     return videoPlayer!
+    // FIXME
+    // Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value
+    // VideoPlayerHelper, VideoPlayerView, VideoModel, VideoListView
+    // 008 - VideoListView, 009 - Player
 }

@@ -45,7 +45,6 @@ struct ContentView: View {
         
         NavigationView {
             Group {
-                NavigationView {
                     if !isGridViewActive {
                         List {
                             CoverImageView()
@@ -75,8 +74,6 @@ struct ContentView: View {
                         } //: SCROLL
                     } //: CONDITION
             } //: GROUP
-        }
-            
             .navigationBarTitle("Africa", displayMode: .large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
